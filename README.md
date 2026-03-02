@@ -3,15 +3,21 @@
 ## Descripción
 API REST con Spring Boot que implementa un endpoint GET que retorna "¡Hola Mundo!"
 
-## Tecnologías
-- Java 25
-- Spring Boot 3.2.4
-- Maven
-- Spring Web
+## Pasos que seguí
 
-## Endpoints
-- `GET /hola` - Retorna "¡Hola Mundo!"
+Entré a Spring Initializr.
 
-## Cómo ejecutar
-```bash
-mvn spring-boot:run
+Configuré el proyecto con Maven, Java 17 y agregué la dependencia Spring Web.
+
+Descargué y abrí el proyecto en mi IDE.
+
+Creé una clase llamada HolaController.
+
+Agregué @RestController para indicar que es un controlador web.
+
+Creé el endpoint con @GetMapping("/hola").
+
+Hice un método que devuelve el texto "Hola Mundo!".
+
+Ejecuté la aplicación y probé en el navegador:
+http://localhost:8080/hola
